@@ -1,7 +1,7 @@
 {
-  "name": "Latin Helper",
-  "description": "helping hand fromnodictionaries.com",
-  "version": "0.1",
+  "name": "Read Anything in Latin",
+  "description": "helping hand from nodictionaries.com",
+  "version": "0.0.1",
   "permissions": ["contextMenus", "tabs"],
   "background": {
     "persistent": false,
