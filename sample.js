@@ -1,7 +1,6 @@
 // Copyright (c) 2012 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-
 // The onClicked callback function.
 function onClickHandler(info, tab) {
     chrome.tabs.sendMessage(tab.id, {method: "getSelection"}, function(response){
@@ -10,7 +9,8 @@ function onClickHandler(info, tab) {
 };
 
 function sendServiceRequest(selectedText){
-    var serviceCall = "http://nodictionaries.com/novifex?text=" + selectedText;
+    var text = encodeURIComponent(selectedText);
+    var serviceCall = "http://nodictionaries.com/novifex?text=" + text;
     chrome.tabs.create({url: serviceCall});
 }
 
