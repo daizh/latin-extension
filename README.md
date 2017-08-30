@@ -1,2 +1,2 @@
-# latin-extension
-chrome extension for learning Latin
+# Verbatim
+chrome extension for translate Latin word by word
